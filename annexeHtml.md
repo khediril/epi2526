@@ -42,9 +42,9 @@ Un formulaire HTML est la structure essentielle pour capturer des données utili
 
     * **`required` :** Rends le champ obligatoire pour la soumission.
 
-    * **`pattern` :** Permet de spécifier une expression régulière pour une validation de format avancée (ex. : code postal, format spécifique).
+    * **`min`, `max`, `maxlength`, `minlength` :** Définissent des contraintes de valeur ou de taille.
 
-    * `min`, `max`, `maxlength`, `minlength` : Définissent des contraintes de valeur ou de taille.
+    * **L'Attribut `pattern` (Voir Section III)** : Permet d'appliquer des règles de format complexes.
 
 
 ---
@@ -81,8 +81,46 @@ L'attribut `name` est placé sur le conteneur `<select>`.
 | **Attribut HTML** | La balise `<select>` **doit** avoir l'attribut **`multiple`**. |
 | **Attribut `name`** | Le `name` doit également être suivi des **crochets `[]`** (ex. : `name="pays_visites[]"`). |
 
-| **Élément** | **Sélections Autorisées** | **Emplacement du name** | **Règle name pour le Groupement** |
+---
+
+## III. Validation Avancée Côté Client : L'Attribut `pattern`
+
+L'attribut **`pattern`** utilise les **Expressions Régulières (RegEx)** pour définir un format spécifique que la valeur du champ doit respecter.
+
+### Fonctionnement et Convention
+
+* **Règles de Format :** L'Expression Régulière est une séquence de caractères définissant un modèle.
+* **Ancrage :** La saisie doit correspondre à **l'intégralité** du modèle. Utilisez les ancres de début (`^`) et de fin (`$`) pour encadrer le modèle (ex. : `pattern="^MODÈLE$"`).
+* **Message d'Erreur :** Utilisez l'attribut **`title`** pour fournir un message clair à l'utilisateur si la validation échoue.
+
+### Exemples d'Utilisation
+
+| Objectif de Validation | Expression Régulière | Exemple HTML | Explication RegEx |
 | :--- | :--- | :--- | :--- |
-| **Radio** | Un seul choix | Sur chaque `<input>` | **Identique** pour tout le groupe |
-| **Checkbox** | Plusieurs choix | Sur chaque `<input>` | **Crochets `[]`** recommandés pour les groupes |
-| **Select** | Plusieurs choix | Sur le `<select>` | Attribut **`multiple`** requis et **crochets `[]`** sur `name` |
+| **Code Postal (5 chiffres)** | `^\d{5}$` | `<input type="text" pattern="^\d{5}$" title="5 chiffres requis">` | `\d` = tout chiffre. `{5}` = exactement 5 fois. |
+| **Nom d'utilisateur (3 à 15 lettres minuscules)** | `^[a-z]{3,15}$` | `<input type="text" pattern="^[a-z]{3,15}$" title="3 à 15 lettres minuscules uniquement">` | `[a-z]` = lettres minuscules. `{3,15}` = longueur entre 3 et 15. |
+| **Plaque d'immatriculation (format ancien : AA-000-BB)** | `^[A-Z]{2}-[0-9]{3}-[A-Z]{2}$` | `<input type="text" pattern="^[A-Z]{2}-[0-9]{3}-[A-Z]{2}$">` | `[A-Z]` = lettres majuscules. `[0-9]` = chiffres. |
+
+---
+
+## IV. Validation Côté Client vs. Validation Côté Serveur
+
+La validation doit toujours être effectuée aux deux niveaux pour garantir la sécurité et une bonne expérience utilisateur. 
+
+### 1. Validation Côté Client (Client-Side Validation)
+
+| Caractéristique | Rôle | Sécurité |
+| :--- | :--- | :--- |
+| **Où ?** | Dans le **navigateur** de l'utilisateur (HTML5, JavaScript). | **Non sécurisée.** Peut être contournée (par exemple, en désactivant JavaScript). |
+| **Objectif** | Améliorer l'**expérience utilisateur (UX)** en fournissant un retour **immédiat** et en évitant des allers-retours inutiles au serveur. |
+| **Méthodes** | Attributs HTML (`required`, `type`, `pattern`), JavaScript. |
+
+### 2. Validation Côté Serveur (Server-Side Validation)
+
+| Caractéristique | Rôle | Sécurité |
+| :--- | :--- | :--- |
+| **Où ?** | Sur le **serveur web** (PHP, Node.js, Python, etc.), après la soumission. | **Essentielle.** C'est la seule validation **fiable**, car elle est impossible à contourner. |
+| **Objectif** | **Garantir la sécurité** et l'intégrité des données, protéger contre les injections (SQL, XSS), et s'assurer que les règles métier sont respectées. |
+| **Méthodes** | Langages de programmation back-end, vérifications de base de données. |
+
+**Conclusion :** La validation **côté client** est un confort d'utilisation, mais la validation **côté serveur** est une obligation de sécurité. **Les deux sont indispensables.**
