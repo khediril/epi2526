@@ -1,7 +1,3 @@
-Suite à l'atelier sur `display: flex`, voici une proposition de Travail Pratique (TP) de 3 heures entièrement consacré à la maîtrise du **CSS Grid Layout**. Le Grid est l'outil parfait pour structurer les mises en page bi-dimensionnelles complexes.
-
------
-
 # TP : Maîtriser le CSS Grid Layout 🧱
 
 **Durée :** 3 heures
