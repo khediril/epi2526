@@ -8,7 +8,7 @@
 
 ## Déroulé de l'Atelier
 
-### Module 1 : Le "Pourquoi" ?
+### Module 1 : 
 
 **Le Concept Fondamental de Flexbox**
 
