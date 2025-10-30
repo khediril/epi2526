@@ -104,15 +104,3 @@ L'objectif est de construire une mise en page standard en utilisant uniquement F
 2.  Appliquez **`display: flex;`** au conteneur `.main-layout`.
 3.  Donnez une largeur fixe à la `sidebar` : `width: 250px;`.
 4.  Appliquez la propriété **`flex-grow: 1;`** à la section `.content`.
-5.  **Observation :** Expliquez le rôle de `flex-grow: 1;` dans ce contexte. Quel était l'avantage d'utiliser Flexbox plutôt que les propriétés `float` pour réaliser cette mise en page ?
-
------
-
-## Évaluation
-
-Répondez brièvement aux questions suivantes :
-
-1.  Quelles sont les deux propriétés ignorées par un élément `display: inline;` ?
-2.  Quelle propriété Flexbox permet de centrer un élément sur **l'axe principal** ?
-3.  Expliquez en une phrase l'effet de `display: inline-block;`.
-4.  Pourquoi utilise-t-on `flex-grow` plutôt que d'attribuer une largeur en pourcentage (`width: 75%;`) à l'élément `content` dans l'Exercice 3.2 ?
