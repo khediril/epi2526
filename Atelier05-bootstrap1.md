@@ -1,7 +1,5 @@
 
-# TP 1 : Les Fondations et les Composants de Bootstrap 5 🛠️
-
-**Durée :** 3 heures
+# TP 4 : Les Fondations et les Composants de Bootstrap 5
 
 **Objectif :** Maîtriser l'intégration de Bootstrap, ses utilitaires d'espacement et de couleur, et savoir utiliser les composants d'interface utilisateur les plus fréquents (boutons, alertes, Navbar, Card).
 
@@ -11,7 +9,7 @@
 2.  Créez un fichier `index.html`.
 3.  **Lien CDN :** Intégrez le CSS et le JavaScript de Bootstrap 5 via CDN.
 
-## Partie 1 : Les Utilitaires (60 min)
+## Partie 1 : Les Utilitaires
 
 ### Exercice 1.1 : Conteneurs et Marges/Padding
 
@@ -38,7 +36,7 @@
     * **Aligner** les éléments en bas (axe secondaire) : `align-items-end`.
     * **Inverser** la direction des éléments (verticale) : `flex-column`.
 
-## Partie 2 : Les Composants Essentiels (120 min)
+## Partie 2 : Les Composants Essentiels
 
 ### Exercice 2.1 : Boutons et Alertes
 
