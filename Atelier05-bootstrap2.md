@@ -5,7 +5,7 @@
 
 ## Préparation        
 
-1.  Créez un dossier `TP_Bootstrap_1`.
+1.  Créez un dossier `TP_Bootstrap_5`.
 2.  Créez un fichier `index.html`.
 3.  **Lien CDN :** Intégrez le CSS et le JavaScript de Bootstrap 5 via CDN.
 
