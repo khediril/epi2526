@@ -1,9 +1,9 @@
 
-# TP 05 : Les Fondations et les Composants de Bootstrap 5
+# Atelier 5 : Les Fondations et les Composants de Bootstrap 5
 
 **Objectif :** Maîtriser l'intégration de Bootstrap, ses utilitaires d'espacement et de couleur, et savoir utiliser les composants d'interface utilisateur les plus fréquents (boutons, alertes, Navbar, Card).
 
-## Préparation
+## Préparation        
 
 1.  Créez un dossier `TP_Bootstrap_1`.
 2.  Créez un fichier `index.html`.

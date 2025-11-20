@@ -1,6 +1,6 @@
-# TP 2 : Le Système de Grille et le Responsive Design (Grid & RWD) 💻
+# Atelier 4 : Le Système de Grille et le Responsive Design (Grid & RWD) 💻
 
-**Durée :** 3 heures
+**Durée :** 3 heures       
 
 **Objectif :** Maîtriser le système de grille à 12 colonnes, utiliser les préfixes de points de rupture pour créer un design réactif, et appliquer le principe du "Mobile First".
 
