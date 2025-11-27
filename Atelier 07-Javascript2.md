@@ -1,6 +1,6 @@
 # TP 08 JavaScript - 02 : DOM et Événements
 
-## 📚 Table des matières
+##  Table des matières
 1. [Introduction au DOM](#1-introduction-au-dom)
 2. [Sélection d'Éléments](#2-sélection-déléments)
 3. [Manipulation du Contenu](#3-manipulation-du-contenu)
@@ -742,3 +742,4 @@ document
 - Ne pas gérer les cas où l'élément n'existe pas
 - Utiliser `innerHTML` avec des données utilisateur (risque XSS)
 - Créer des variables globales inutile
+
