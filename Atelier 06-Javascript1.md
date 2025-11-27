@@ -179,15 +179,3 @@ Les **événements** sont des actions que l'utilisateur effectue (cliquer, bouge
     // On dit au bouton d'écouter le 'click' et d'appeler la fonction
     bouton.addEventListener('click', incrementerCompteur);
     ```
-
-###  Conclusion et Prochaines Étapes
-
-Félicitations \! Vous avez couvert les bases essentielles de JavaScript :
-
-  * Intégrer le code.
-  * Utiliser la console pour le débogage.
-  * Stocker des données avec des **variables**.
-  * Manipuler le **DOM** (texte et style).
-  * Réagir aux actions de l'utilisateur avec des **événements**.
-
-Souhaitez-vous explorer le concept des **Conditions (`if/else`)** ou des **Boucles (`for`)** pour la prochaine session ?
