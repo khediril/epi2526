@@ -1,4 +1,4 @@
-# TP 08 JavaScript - 02 : DOM et Événements
+# TP 07 JavaScript - 02 : DOM et Événements
 
 ##  Table des matières
 1. [Introduction au DOM](#1-introduction-au-dom)
@@ -742,4 +742,5 @@ document
 - Ne pas gérer les cas où l'élément n'existe pas
 - Utiliser `innerHTML` avec des données utilisateur (risque XSS)
 - Créer des variables globales inutile
+
 
