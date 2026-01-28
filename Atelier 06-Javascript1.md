@@ -37,6 +37,8 @@ Pour que javascript fonctionne, il doit être lié à votre fichier HTML. La mei
 La **console** du navigateur est votre meilleur ami en JavaScript. Elle permet :
 
   * D'afficher des informations pour vérifier que votre code s'exécute.
+     * jjj
+     * llll
   * De signaler les erreurs.
 
 Pour afficher un message, on utilise la commande `console.log()`.
