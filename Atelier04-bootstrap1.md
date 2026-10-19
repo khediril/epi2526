@@ -1,4 +1,4 @@
-# Atelier 4 : Le Système de Grille et le Responsive Design (Grid & RWD) 💻
+# Atelier 4 : Le Système de Grille et le Responsive Design (Grid) 
 
 **Durée :** 3 heures       
 
